@@ -1,0 +1,33 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "localmongo": {
+    "url": "mongodb://localhost/emails",
+    "password": "",
+    "name": "localmongo",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "emailDataSource": {
+    "name": "emailDataSource",
+    "connector": "mail"
+  },
+  "emailSource": {
+    "name": "emailSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "node2test@gmail.com",
+          "pass": ""
+        }
+      }
+    ]
+  }
+}

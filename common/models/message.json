@@ -1,0 +1,56 @@
+{
+  "name": "message",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appId": {
+      "type": "string",
+      "id": false,
+      "required": true
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "template": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    },
+    "to": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "cc": {
+      "type": [
+        "string"
+      ]
+    },
+    "bcc": {
+      "type": [
+        "string"
+      ]
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "deliveryTime": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
