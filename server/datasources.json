@@ -8,7 +8,7 @@
     "password": "",
     "name": "localmongo",
     "user": "",
-    "connector": "mongodb"
+    "connector": "memory"
   },
   "emailDataSource": {
     "name": "emailDataSource",
@@ -25,7 +25,7 @@
         "port": 465,
         "auth": {
           "user": "node2test@gmail.com",
-          "pass": ""
+          "pass": "Refresh@2015"
         }
       }
     ]
