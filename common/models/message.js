@@ -1,7 +1,7 @@
 var swig  = require('swig');
 var path=require('path');
 
-var templatepath=path.join(process.cwd(),"templates");
+var templatepath=path.join(process.cwd(),"server","templates");
 
 module.exports = function(Message) {
 Message.observe('after save', function(ctx, next) {
@@ -13,10 +13,10 @@ Message.observe('after save', function(ctx, next) {
 	    data: ctx.instance.data
 		});
     //console.log('output',output,ctx.instance,typeof(ctx.instance));
-    console.log(output);
+    //console.log(output);
 
 	Message.app.models.Email.send({
-	      to: "9chakri@gmail.com",
+	      to: "bhaskarjyoti86@gmail.com",
 	      from: "node2test@gmail.com",
 	      subject: 'Order Details',
 	      html: output
