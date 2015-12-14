@@ -38,5 +38,7 @@
     "$promise": {},
     "$resolved": true
   },
-  "Email": { "dataSource": "emailSource" }
+  "Email": {
+    "dataSource": "emailSource"
+  }
 }
