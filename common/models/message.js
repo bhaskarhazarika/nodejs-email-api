@@ -17,8 +17,8 @@ Message.observe('after save', function(ctx, next) {
 
 	Message.app.models.Email.send({
 	      to: ctx.instance.to,
-	      from: "node2test@gmail.com",
-	      subject: 'Order Details',
+	      from: ctx.instance.from,
+	      subject: ctx.instance.subject,
 	      html: output
 	    }, function(err) {
 	      if (err) return console.log('> error sending password reset email',err);
