@@ -16,7 +16,7 @@ Message.observe('after save', function(ctx, next) {
     //console.log(output);
 
 	Message.app.models.Email.send({
-	      to: "bhaskarjyoti86@gmail.com",
+	      to: ctx.instance.to,
 	      from: "node2test@gmail.com",
 	      subject: 'Order Details',
 	      html: output
